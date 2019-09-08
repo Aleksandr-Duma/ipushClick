@@ -22,8 +22,16 @@ body{
 }
 
 .container{
-	width: 1404px;
+	width: 95%;
 	// width: 95%;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media (min-width: 700px){
+		width: 95%;
+	}
+
+	@media (min-width: 1400px){
+		width: 1404px;
+	}
 }
