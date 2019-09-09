@@ -6,16 +6,19 @@
 }
 
 .still-us-content{
-	// border: 1px solid green;
 	padding-top: 26px;
-	padding-bottom: 65px;
-	padding-left: 13px;
+	padding-bottom: 25px;
+
+	@media (min-width: 1200px){
+		padding-left: 13px;
+		padding-bottom: 65px;
+	}
 }
 
 .still-us-title{
 	font-family: 'montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 60px;
+	font-size: 30px;
 	line-height: 0.8;
 	color: @main-text;
 	margin-left: 33px;
@@ -26,94 +29,156 @@
 	&:before{
 		content: "";
 		display: block;
-		width: 208px;
+		width: 95px;
 		height: 3px;
 		background-color: @main-red;
 		position: absolute;
-		top: 23px;
-		left: -105px;
+		top: 11px;
+		left: -55px;
 		z-index: -1;
+	}
+
+	@media (min-width: 1200px){
+		font-size: 60px;
+		line-height: 0.8;
+
+		&:before{
+			width: 208px;
+			top: 23px;
+			left: -105px;
+		}
 	}
 }
 
 .still-us-block-item{
 	width: 100%;
-	// border: 1px solid red;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 1200px){
+		flex-direction: row;
+		padding-left: 13px;
+	}
 }
 
 .still-us-item-support{
-	width: 24%;
-	// border: 1px solid green;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-top: 18px;
-	padding-left: 36px;
+	padding-left: 18px;
+	padding-right: 10px;
+
+	@media (min-width: 1200px){
+		width: 24%;
+		padding-top: 18px;
+		padding-right: 0;
+	}
 }
 
 .icon-support{
-	width: 72px;
-	height: 72px;
+	width: 42px;
+	height: 42px;
 	margin-right: 7px;
 	margin-bottom: 8px;
+
+	@media (min-width: 700px){
+		width: 72px;
+		height: 72px;
+	}
 }
 
 .still-us-item-text{
 	font-family: 'montserrat', sans-serif;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.25;
 	color: @main-text;
+
+	@media (min-width: 700px){
+		font-size: 18px;
+	}
 }
 
 .still-us-item-money{
-	width: 20%;
-	// border: 1px solid green;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-top: 18px;
-	padding-right: 45px;
-	padding-left: 4px;
+	padding-left: 18px;
+	padding-right: 10px;
+
+	@media (min-width: 1200px){
+		width: 20%;
+		padding-top: 18px;
+		padding-right: 45px;
+		padding-left: 4px;
+	}
 }
 
 .money-icon{
-	width: 65px;
-	height: 65px;
+	width: 40px;
+	height: 40px;
 	margin-right: 13px;
+
+	@media (min-width: 700px){
+		width: 65px;
+		height: 65px;
+	}
 }
 
 .still-us-item-help{
-	width: 25.5%;
-	// border: 1px solid green;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-top: 16px;
-	padding-right: 25px;
-	padding-left: 5px;
+	padding-left: 18px;
+	padding-right: 10px;
+
+	@media (min-width: 1200px){
+		width: 25.5%;
+		padding-top: 16px;
+		padding-right: 25px;
+		padding-left: 5px;
+	}
 }
 
 .help-icon{
-	width: 88px;
-	height: 88px;
+	width: 52px;
+	height: 52px;
 	margin-right: 14px;
+
+	@media (min-width: 700px){
+		width: 88px;
+		height: 88px;
+	}
 }
 
 .still-us-item-start{
-	width: 27%;
-	// border: 1px solid green;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-top: 18px;
-	padding-right: 25px;
+	padding-left: 0;
+	padding-right: 10px;
+
+	@media (min-width: 1200px){
+		width: 27%;
+		padding-top: 18px;
+		padding-right: 25px;
+		padding-left: 0;
+	}
 }
 
 .start-icon{
-	width: 91px;
-	height: 91px;
+	width: 60px;
+	height: 60px;
 	margin-right: 16px;
 	margin-top: -12px;
+
+	@media (min-width: 700px){
+		width: 91px;
+		height: 91px;
+	}
 }

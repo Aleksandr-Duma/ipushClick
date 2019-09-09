@@ -1,7 +1,6 @@
 /*.............Header-content..............*/
 
 .header-content{
-	// border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -23,7 +22,7 @@
 	color: #F9FAFD;
 	z-index: -1;
 
-	@media (min-width: 700px){
+	@media (min-width: 1200px){
 		left: 10px;
 		font-size: 430.991px;
 	}
@@ -31,7 +30,6 @@
 
 .header-content-left{
 	width: 100%;
-	// border: 1px solid green;
 
 	@media (min-width: 700px){
 		width: 43%;
@@ -62,7 +60,7 @@
 		z-index: -1;
 	}
 
-	@media (min-width: 700px){
+	@media (min-width: 1200px){
 		font-size: 70px;
 		text-align: left;
 		margin-left: 33px;
@@ -81,9 +79,8 @@
 	font-size: 20px;
 	line-height: 1.2;
 	color: @main-text;
-	// margin-bottom: 55px;
 
-	@media (min-width: 700px){
+	@media (min-width: 1200px){
 		font-size: 40px;
 		line-height: 1.2;
 		margin-bottom: 55px;
@@ -98,7 +95,7 @@
 	color: @main-text;
 	margin-bottom: 30px;
 
-	@media (min-width: 700px){
+	@media (min-width: 1200px){
 		font-size: 18px;
 		margin-bottom: 68px;
 	}
@@ -106,13 +103,12 @@
 
 .header-content-left-block-button{
 	width: 100%;
-	// border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 25px;
 
-	@media (min-width: 700px){
+	@media (min-width: 1200px){
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
@@ -137,7 +133,7 @@
 	padding-top: 20px;
 	margin-bottom: 25px;
 	
-	@media (min-width: 700px){
+	@media (min-width: 1200px){
 		width: 292px;
 		height: 68px;
 		font-size: 18px;
@@ -170,38 +166,49 @@
 
 .header-content-right{
 	width: 100%;
-	// height: 685px;
-	// border: 1px solid green;
 	position: relative;
-	// padding-left: 30px;
 
 	@media (min-width: 700px){
 		width: 57%;
-		height: 685px;
 		padding-left: 30px;
+	}
+
+	@media (min-width: 1200px){
+		height: 685px;
 	}
 }
 
 .header-coins-svg{
-			display: none;
+	display: none;
 	width: 114px;
 	height: 112px;
 	position: absolute;
 	top: 56px;
 	left: -15px;
+
+	@media (min-width: 1200px){
+		display: block;
+	}
 }
 
 .header-right-coins-img{
-			display: none;
+	display: none;
 	position: absolute;
 	top: 74px;
 	left: 428px;
 	z-index: 2;
+
+	@media (min-width: 1200px){
+		display: block;
+	}
 }
 
 .header-right-img{
-			display: none;
+	width: 100%;
 	margin: 0;
-	margin-top: -27px;
+
+	@media (min-width: 1200px){
+		margin-top: -27px;
+	}
 }
 
